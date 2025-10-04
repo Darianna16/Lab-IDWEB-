@@ -1,0 +1,64 @@
+<!DOCTYPE >
+<html>
+    <head>
+
+    </head>
+    <body>
+        <header>
+            <h1>-Menú-</h1>
+            <nav>
+                <ul>
+                    <li><a href="#registro.html">Registro</a></li>
+                    <li><a href="#lenguajes.html">Lenguajes</a></li>
+                    <li><a href="#validacion.html">Validación</a></li>
+                </ul>
+        </header>
+        <main>
+            <form>
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombre" name="nombre">
+                <br><br>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos">
+                <br><br>
+                <label for="identidad">Documento de Identidad:</label>
+                <input type="text" id="identidad" name="dni">
+                <br><br>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo">
+                <br><br>
+            <select id="cursos" name="curso">
+                <option value="">-- Selecciona un curso --</option>
+                <option value="mx">Estructuras Discretas</option>
+                <option value="es">Taller de narrativa digital</option>
+                <option value="ar">Cálculo</option>
+                <option value="co">Realidad Nacional</option>
+            </select>
+            <br><br>
+            <select id="modalidad" name="modalidad">
+                <option value="">-- Modalidad --</option>
+                <option value="mx">Presencial</option>
+                <option value="es">Virtual</option>
+            </select>
+            <label> -Horarios-
+                <input type="checkbox" name="correos promocionales" required>
+                Mañana
+            </label>
+            <label>
+                <input type="checkbox" name="correos promocionales" required>
+                Tarde
+            </label>
+            <label>
+                <input type="checkbox" name="correos promocionales" required>
+                Noche
+            </label>
+            </form>
+        </main>
+        <footer>
+            <button type="submit">Suscribirse</button>
+            <br><br>
+            <botton  type="reset">Resetear registro</botton>
+        </footer>
+
+    </body>
+</html>
