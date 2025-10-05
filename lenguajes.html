@@ -1,7 +1,8 @@
 <!DOCTYPE >
-<html>
+<html lang="es">
     <head>
-
+        <meta charset="UTF-8">
+        <title>lengaujes</title>
     </head>
     <body>
         <header>
@@ -14,10 +15,49 @@
                 </ul>
         </header>
         <main>
+            <label for="preferencias">¿Qué lenguaje prefieres?</label> <br>
+            <input type="radio" id="java" name="lenguaje" value="Java">
+            <label for="java">Java</label><br>
 
+            <input type="radio" id="python" name="lenguaje" value="Python">
+            <label for="python">Python</label><br>
+
+            <input type="radio" id="javascript" name="lenguaje" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+
+            <input type="radio" id="html" name="lenguaje" value="HTML">
+            <label for="html">HTML</label><br>
+
+            <input type="radio" id="css" name="lenguaje" value="css">
+            <label for="css">CSS</label><br><br>
+
+            <label for="fr">Subir foto de perfil:</label><br><br>
+            <input type="file" name="ft" id="ft" accept="image/*"><br><br>
+
+            <label for="conoce">Que lenguajes conoces?: <br>
+            <input type="checkbox" name="conoce" id="conocer">    
+            <label for="conocer">java</label>
+
+            <input type="checkbox" name="conoce" id="python">    
+            <label for="python">python</label>
+
+            <input type="checkbox" name="conoce" id="HTML">    
+            <label for="HTML">HTML</label>
+
+            <input type="checkbox" name="conoce" id="CSS">    
+            <label for="CSS">CSS</label>
+
+            <input type="checkbox" name="conoce" id="JavaScript">    
+            <label for="JavaScript">JavaScript</label>
+        </label>
+           <br><br>
+           <label for="numero">¿Cuántas horas de programación estudias al día?</label>
+           <br>
+           <input type="number" id="numero" name="numero" placeholder="Ingresa el número" min="1" required>
         </main>
         <footer>
-            <botton type="submit">Guardar</botton>
-        </footer>
+            <br>
+            <button type="submit">Guardar</button>
+        </footer>                     
     </body>
 </html>
