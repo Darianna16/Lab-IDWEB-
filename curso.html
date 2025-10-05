@@ -1,7 +1,8 @@
 <!DOCTYPE >
-<html>
+<html lang="es">
     <head>
-
+        <meta charset="UTF-8">
+        <title>curso</title>
     </head>
     <body>
         <header>
@@ -16,49 +17,53 @@
         <main>
             <form>
                 <label for="nombres">Nombres:</label>
-                <input type="text" id="nombre" name="nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre..." required>
                 <br><br>
                 <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos">
+                <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese apellidos..." required>
                 <br><br>
                 <label for="identidad">Documento de Identidad:</label>
-                <input type="text" id="identidad" name="dni">
+                <input type="text" id="identidad" name="dni" placeholder="Ingrese DNI..." required>
                 <br><br>
                 <label for="correo">Correo:</label>
-                <input type="email" id="correo" name="correo">
+                <input type="email" id="correo" name="correo" placeholder="example@correo.com" required>
                 <br><br>
-            <select id="cursos" name="curso">
-                <option value="">-- Selecciona un curso --</option>
-                <option value="mx">Estructuras Discretas</option>
-                <option value="es">Taller de narrativa digital</option>
-                <option value="ar">Cálculo</option>
-                <option value="co">Realidad Nacional</option>
-            </select>
-            <br><br>
-            <select id="modalidad" name="modalidad">
-                <option value="">-- Modalidad --</option>
-                <option value="mx">Presencial</option>
-                <option value="es">Virtual</option>
-            </select>
-            <label> -Horarios-
+                <select id="cursos" name="curso">
+                    <option value="">-- Selecciona un curso --</option>
+                    <option value="mx">Estructuras Discretas</option>
+                    <option value="es">Taller de narrativa digital</option>
+                    <option value="ar">Cálculo</option>
+                    <option value="co">Realidad Nacional</option>
+                </select>
+                <br><br>
+                <select id="modalidad" name="modalidad">
+                    <option value="">-- Modalidad --</option>
+                    <option value="mx">Presencial</option>
+                    <option value="es">Virtual</option>
+                </select>
+                <br><br>
+                <label> -Horarios-
                 <input type="checkbox" name="correos promocionales" required>
-                Mañana
-            </label>
-            <label>
+                    Mañana
+                </label>
+                <label>
                 <input type="checkbox" name="correos promocionales" required>
-                Tarde
-            </label>
-            <label>
+                    Tarde
+                </label>
+                <label>
                 <input type="checkbox" name="correos promocionales" required>
-                Noche
-            </label>
+                    Noche
+                </label>
+                <br><br>
+                <label for="comentario">Comentarios</label>
+                <br>
+                <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br>
             </form>
         </main>
         <footer>
-            <button type="submit">Suscribirse</button>
+            <button type="submit" value="Enviar">Enviar</button>
             <br><br>
-            <botton  type="reset">Resetear registro</botton>
+            <button type="reset" value="Resetear registro">Resetear Registro</button>
         </footer>
-
     </body>
 </html>
